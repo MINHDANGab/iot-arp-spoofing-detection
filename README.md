@@ -2,7 +2,7 @@
 
 A lightweight Deep Learning-based Intrusion Detection System (IDS) for detecting **ARP Spoofing attacks** in IoT networks using packet-level traffic analysis and SHAP explainability.
 
-## 🚀 Features
+## Features
 
 - Detects ARP Spoofing / MITM attacks
 - Deep Neural Network (DNN) classifier
@@ -12,7 +12,7 @@ A lightweight Deep Learning-based Intrusion Detection System (IDS) for detecting
 
 ---
 
-## 🧠 Model
+## Model
 
 - Input: 21 network traffic features
 - Architecture: `24 → 16 → 16 → 8 → 1`
@@ -29,26 +29,29 @@ Important features:
 
 ---
 
-## 📊 Results
+## Results
 
 | Metric | Score |
 |---|---|
-| Accuracy | 99%+ |
-| Precision | 99%+ |
-| Recall | 99%+ |
-| F1-Score | 0.999 |
+| Accuracy | 96.79% |
+| Precision | 93.52% |
+| Recall | 99.34% |
+| F1-Score | 0.96.34% |
 
 ---
 
-## 📷 Visualizations
-
-- SHAP Summary Plot
+## Visualizations
 - Confusion Matrix
+![Confusion Matrix](plots/confmatrix.jpg)
 - Training Loss Curve
+![Confusion Matrix](plots/loss.jpg)
+- SHAP Summary Plot
+![Confusion Matrix](plots/shap.jpg)
+
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/MINHDANGab/iot-arp-spoofing-detection.git
@@ -58,7 +61,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+## Usage
 
 Train model:
 
@@ -66,18 +69,18 @@ Train model:
 python train.py
 ```
 
-Run explainability:
+Evaluate model:
 
 ```bash
-python explainability.py
+python evaluate.py
 ```
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - Python
-- TensorFlow / Keras
+- Pytorch
 - Scikit-learn
 - SHAP
 - Pandas
@@ -85,7 +88,7 @@ python explainability.py
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Minh Dang**
 
