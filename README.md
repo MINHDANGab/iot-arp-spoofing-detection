@@ -1,20 +1,92 @@
-# Arp-spoofing-detection-for-iot-networks-using-deep-learning
+# IoT ARP Spoofing Detection using Deep Learning
 
-This project implements a deep-learning–based system to detect ARP spoofing (MITM attacks) in IoT networks.  
-The dataset is generated from packet captures (PCAP), preprocessed using Python, and then trained with a Deep Neural Network (DNN) model built in PyTorch.
+A lightweight Deep Learning-based Intrusion Detection System (IDS) for detecting **ARP Spoofing attacks** in IoT networks using packet-level traffic analysis and SHAP explainability.
+
+## 🚀 Features
+
+- Detects ARP Spoofing / MITM attacks
+- Deep Neural Network (DNN) classifier
+- SHAP Explainable AI visualization
+- Packet-level traffic analysis
+- High accuracy with low false positive rate
 
 ---
 
-##  Features of This Project
+## 🧠 Model
 
-- Custom dataset created from ARP spoofing attack traffic and benign traffic
-- Full preprocessing pipeline (cleaning, normalization, feature engineering)
-- Support for TCP/UDP feature disabling
-- Deep Neural Network (PyTorch) for binary classification
-- Model evaluation with accuracy, precision, recall, F1-score
-- Confusion matrix visualization
-- SHAP-based feature importance analysis
+- Input: 21 network traffic features
+- Architecture: `24 → 16 → 16 → 8 → 1`
+- Activation: ReLU + Sigmoid
+- Optimizer: Nadam
 
+Important features:
 
+- `tcp.dstport`
+- `tcp.srcport`
+- `frame.len`
+- `tcp.len`
+- `tcp.flags.syn`
 
+---
 
+## 📊 Results
+
+| Metric | Score |
+|---|---|
+| Accuracy | 99%+ |
+| Precision | 99%+ |
+| Recall | 99%+ |
+| F1-Score | 0.999 |
+
+---
+
+## 📷 Visualizations
+
+- SHAP Summary Plot
+- Confusion Matrix
+- Training Loss Curve
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/MINHDANGab/iot-arp-spoofing-detection.git
+cd iot-arp-spoofing-detection
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+Train model:
+
+```bash
+python train.py
+```
+
+Run explainability:
+
+```bash
+python explainability.py
+```
+
+---
+
+## 🛠️ Technologies
+
+- Python
+- TensorFlow / Keras
+- Scikit-learn
+- SHAP
+- Pandas
+- NumPy
+
+---
+
+## 👨‍💻 Author
+
+**Minh Dang**
+
+GitHub: https://github.com/MINHDANGab
