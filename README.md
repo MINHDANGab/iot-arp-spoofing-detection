@@ -51,7 +51,7 @@ Important features:
 | Accuracy | 96.79% |
 | Precision | 93.52% |
 | Recall | 99.34% |
-| F1-Score | 0.96.34% |
+| F1-Score | 96.34% |
 
 
 
