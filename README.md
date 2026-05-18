@@ -104,7 +104,13 @@ python evaluate.py
 - Pandas
 - NumPy
 
+## Reference
 
+This project was developed as a course project for the *Telecommunication Systems* course and is inspired by the research paper:
+
+> Mohammed M. Alani et al.  
+> "ARP-PROBE: An ARP spoofing detector for Internet of Things networks using explainable deep learning"  
+> Internet of Things, 2023.
 ## Author
 
 **Minh Dang**
