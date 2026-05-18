@@ -44,9 +44,9 @@ Important features:
 - Confusion Matrix
 ![Confusion Matrix](plots/confmatrix.jpg)
 - Training Loss Curve
-![Confusion Matrix](plots/loss.jpg)
+![Loss](plots/loss.jpg)
 - SHAP Summary Plot
-![Confusion Matrix](plots/shap.jpg)
+![Shap](plots/shap.jpg)
 
 
 ---
