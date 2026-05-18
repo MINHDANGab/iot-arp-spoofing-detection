@@ -21,13 +21,28 @@ A lightweight Deep Learning-based Intrusion Detection System (IDS) for detecting
 
 Important features:
 
+- `frame.len`
+- `ip.proto`
+- `ip.len`
+- `ip.ttl`
+- `ip.flags`
+- `ip.hdr_len`
+- `arp`
+- `tcp.flags.syn`
+- `tcp.flags.ack`
+- `tcp.flags.reset`
+- `tcp.window_size`
+- `icmp`
+- `tcp.checksum.status`
 - `tcp.dstport`
 - `tcp.srcport`
-- `frame.len`
+- `tcp.flags`
 - `tcp.len`
-- `tcp.flags.syn`
+- `tcp.time_delta`
+- `tcp.urgent_pointer`
+- `udp.srcport`
+- `udp.dstport`
 
----
 
 ## Results
 
@@ -38,7 +53,7 @@ Important features:
 | Recall | 99.34% |
 | F1-Score | 0.96.34% |
 
----
+
 
 ## Visualizations
 - Confusion Matrix
@@ -53,7 +68,7 @@ Important features:
 ![Shap](plots/shap.jpg)
 
 
----
+
 
 ## Installation
 
@@ -63,7 +78,7 @@ cd iot-arp-spoofing-detection
 pip install -r requirements.txt
 ```
 
----
+
 
 ## Usage
 
@@ -79,7 +94,6 @@ Evaluate model:
 python evaluate.py
 ```
 
----
 
 ## Technologies
 
@@ -90,7 +104,6 @@ python evaluate.py
 - Pandas
 - NumPy
 
----
 
 ## Author
 
